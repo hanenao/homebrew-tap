@@ -5,20 +5,20 @@
 class GitHandoff < Formula
   desc "Safely hand off branches between local and worktree checkouts"
   homepage "https://github.com/hanenao/git-handoff"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.2/git-handoff_v0.0.2_darwin_amd64.zip"
-      sha256 "b54716e6f233c573591af3188665412bc682759f3caed088ce13cd74f70da025"
+      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.3/git-handoff_v0.0.3_darwin_amd64.zip"
+      sha256 "eadb3b0be97b49ba9c746369bbc38923d86581d46fb3c55495119766730ba072"
 
       define_method(:install) do
         bin.install "git-ho"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.2/git-handoff_v0.0.2_darwin_arm64.zip"
-      sha256 "f93eb408479d578ed8535a27c855a48e7237ce936400c2c4a3c024cd5370181d"
+      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.3/git-handoff_v0.0.3_darwin_arm64.zip"
+      sha256 "4dcefa0d5810fba9ef65cb150309df334c4ad1c09cb78cc88953df648792b0dd"
 
       define_method(:install) do
         bin.install "git-ho"
@@ -28,15 +28,15 @@ class GitHandoff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.2/git-handoff_v0.0.2_linux_amd64.tar.gz"
-      sha256 "160778ed9be7c6132d427fb52153c7926a5892a4b6076d44caa23dadfd7c495d"
+      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.3/git-handoff_v0.0.3_linux_amd64.tar.gz"
+      sha256 "c51120fde8d98f65741a967a0660fb69e7a78bc291df75c0b6a2b15d724ceae1"
       define_method(:install) do
         bin.install "git-ho"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.2/git-handoff_v0.0.2_linux_arm64.tar.gz"
-      sha256 "f7e83668a749f68b6dffaa1adfdc52594cc3979bd03a9ac9fc025a3f25d4aee1"
+      url "https://github.com/hanenao/git-handoff/releases/download/v0.0.3/git-handoff_v0.0.3_linux_arm64.tar.gz"
+      sha256 "03c8b4963f4406f71270bf52a31f22a2c5fbb675ae26c4383d4d9d2409ecbff6"
       define_method(:install) do
         bin.install "git-ho"
       end
